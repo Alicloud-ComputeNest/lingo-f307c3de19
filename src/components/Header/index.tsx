@@ -13,8 +13,6 @@ const Header = () => {
             </div>
             <nav className="hidden md:ml-10 md:flex md:space-x-8">
               <a href="#" className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">仪表盘</a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">活动</a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">素材</a>
               <a href="#" className="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">分析</a>
             </nav>
           </div>
