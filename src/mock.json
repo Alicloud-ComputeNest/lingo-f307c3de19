@@ -1,0 +1,70 @@
+{
+  "campaigns": [
+    {
+      "id": 1,
+      "name": "夏季新品发布会",
+      "status": "active",
+      "startDate": "2023-06-15",
+      "endDate": "2023-07-15",
+      "budget": 50000,
+      "spent": 32000,
+      "impressions": 1250000,
+      "clicks": 45000,
+      "conversions": 1200,
+      "roi": 3.2
+    },
+    {
+      "id": 2,
+      "name": "双11购物节促销",
+      "status": "planned",
+      "startDate": "2023-11-01",
+      "endDate": "2023-11-11",
+      "budget": 100000,
+      "spent": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "conversions": 0,
+      "roi": 0
+    },
+    {
+      "id": 3,
+      "name": "品牌周年庆典",
+      "status": "completed",
+      "startDate": "2023-03-01",
+      "endDate": "2023-03-31",
+      "budget": 75000,
+      "spent": 75000,
+      "impressions": 2100000,
+      "clicks": 89000,
+      "conversions": 3200,
+      "roi": 4.8
+    }
+  ],
+  "templates": [
+    {
+      "id": 1,
+      "name": "科技产品发布会",
+      "category": "科技",
+      "preview": "/api/placeholder/300/200"
+    },
+    {
+      "id": 2,
+      "name": "时尚品牌推广",
+      "category": "时尚",
+      "preview": "/api/placeholder/300/200"
+    },
+    {
+      "id": 3,
+      "name": "美食节活动",
+      "category": "餐饮",
+      "preview": "/api/placeholder/300/200"
+    }
+  ],
+  "analytics": {
+    "totalCampaigns": 24,
+    "activeCampaigns": 8,
+    "conversionRate": 3.2,
+    "avgROIPercentage": 245,
+    "monthlyGrowth": 12.5
+  }
+}
