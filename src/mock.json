@@ -1,70 +1,158 @@
 {
+  "stats": [
+    {
+      "title": "总活动数",
+      "value": "24",
+      "change": "+12%",
+      "positive": true
+    },
+    {
+      "title": "活跃活动",
+      "value": "8",
+      "change": "+3",
+      "positive": true
+    },
+    {
+      "title": "平均ROI",
+      "value": "3.2x",
+      "change": "+0.5",
+      "positive": true
+    },
+    {
+      "title": "总预算",
+      "value": "¥124,500",
+      "change": "+¥12,000",
+      "positive": true
+    }
+  ],
+  "features": [
+    {
+      "title": "智能文案生成",
+      "description": "AI驱动的文案创作工具，自动生成吸引人的广告文案",
+      "icon": "PenTool"
+    },
+    {
+      "title": "创意素材制作",
+      "description": "一键生成高质量营销素材，节省设计时间",
+      "icon": "Image"
+    },
+    {
+      "title": "精准效果预测",
+      "description": "基于大数据分析的效果预测，优化投放策略",
+      "icon": "BarChart2"
+    },
+    {
+      "title": "自动化优化",
+      "description": "实时监控和自动调整策略，最大化ROI",
+      "icon": "Settings"
+    },
+    {
+      "title": "智能受众分析",
+      "description": "深度分析目标受众画像，精准定位潜在客户",
+      "icon": "Users"
+    },
+    {
+      "title": "一站式管理",
+      "description": "统一管理所有营销渠道，提高运营效率",
+      "icon": "Layout"
+    }
+  ],
   "campaigns": [
     {
       "id": 1,
-      "name": "夏季新品发布会",
+      "name": "夏季新品推广",
       "status": "active",
-      "startDate": "2023-06-15",
-      "endDate": "2023-07-15",
+      "startDate": "2023-06-01",
+      "endDate": "2023-08-31",
       "budget": 50000,
       "spent": 32000,
       "impressions": 1250000,
       "clicks": 45000,
       "conversions": 1200,
-      "roi": 3.2
+      "roi": 4.2,
+      "description": "针对夏季新品的全方位推广活动，覆盖社交媒体、搜索引擎和电商平台。",
+      "platform": "多平台",
+      "targetAudience": "18-35岁年轻消费者"
     },
     {
       "id": 2,
-      "name": "双11购物节促销",
+      "name": "开学季促销",
       "status": "planned",
-      "startDate": "2023-11-01",
-      "endDate": "2023-11-11",
+      "startDate": "2023-08-15",
+      "endDate": "2023-09-15",
+      "budget": 30000,
+      "spent": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "conversions": 0,
+      "roi": 0,
+      "description": "为迎接开学季而策划的促销活动，主要面向学生群体。",
+      "platform": "电商平台",
+      "targetAudience": "大学生及家长"
+    },
+    {
+      "id": 3,
+      "name": "品牌周年庆",
+      "status": "completed",
+      "startDate": "2023-05-01",
+      "endDate": "2023-05-31",
+      "budget": 80000,
+      "spent": 78000,
+      "impressions": 2100000,
+      "clicks": 85000,
+      "conversions": 3200,
+      "roi": 5.8,
+      "description": "庆祝品牌成立周年的大型营销活动，包含线上线下多种互动形式。",
+      "platform": "全渠道",
+      "targetAudience": "品牌忠实粉丝"
+    },
+    {
+      "id": 4,
+      "name": "母亲节特别活动",
+      "status": "completed",
+      "startDate": "2023-04-20",
+      "endDate": "2023-05-10",
+      "budget": 25000,
+      "spent": 24500,
+      "impressions": 890000,
+      "clicks": 32000,
+      "conversions": 980,
+      "roi": 3.7,
+      "description": "为母亲节推出的特别优惠活动，主打情感营销。",
+      "platform": "社交媒体",
+      "targetAudience": "25-45岁女性"
+    },
+    {
+      "id": 5,
+      "name": "黑色星期五预热",
+      "status": "planned",
+      "startDate": "2023-11-10",
+      "endDate": "2023-11-24",
       "budget": 100000,
       "spent": 0,
       "impressions": 0,
       "clicks": 0,
       "conversions": 0,
-      "roi": 0
+      "roi": 0,
+      "description": "为黑色星期五购物节准备的预热活动，提前吸引消费者关注。",
+      "platform": "全渠道",
+      "targetAudience": "所有消费者"
     },
     {
-      "id": 3,
-      "name": "品牌周年庆典",
-      "status": "completed",
-      "startDate": "2023-03-01",
-      "endDate": "2023-03-31",
-      "budget": 75000,
-      "spent": 75000,
-      "impressions": 2100000,
-      "clicks": 89000,
-      "conversions": 3200,
-      "roi": 4.8
+      "id": 6,
+      "name": "新品试用计划",
+      "status": "active",
+      "startDate": "2023-07-01",
+      "endDate": "2023-09-30",
+      "budget": 40000,
+      "spent": 18000,
+      "impressions": 650000,
+      "clicks": 28000,
+      "conversions": 750,
+      "roi": 2.9,
+      "description": "邀请用户免费试用新产品并分享使用体验的营销活动。",
+      "platform": "社交媒体",
+      "targetAudience": "科技产品爱好者"
     }
-  ],
-  "templates": [
-    {
-      "id": 1,
-      "name": "科技产品发布会",
-      "category": "科技",
-      "preview": "/api/placeholder/300/200"
-    },
-    {
-      "id": 2,
-      "name": "时尚品牌推广",
-      "category": "时尚",
-      "preview": "/api/placeholder/300/200"
-    },
-    {
-      "id": 3,
-      "name": "美食节活动",
-      "category": "餐饮",
-      "preview": "/api/placeholder/300/200"
-    }
-  ],
-  "analytics": {
-    "totalCampaigns": 24,
-    "activeCampaigns": 8,
-    "conversionRate": 3.2,
-    "avgROIPercentage": 245,
-    "monthlyGrowth": 12.5
-  }
+  ]
 }
