@@ -1,82 +1,77 @@
 import React from 'react';
-import { TrendingUp, DollarSign, Target, Eye } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { TrendingUp, BarChart3, Target, DollarSign } from 'lucide-react';
 
 interface StatCardProps {
   title: string;
-  value: string | number;
+  value: string;
+  change: string;
   icon: React.ReactNode;
-  change?: string;
   color: string;
 }
 
-const StatCard: React.FC<StatCardProps> = ({ title, value, icon, change, color }) => {
+const StatCard: React.FC<StatCardProps> = ({ title, value, change, icon, color }) => {
   return (
     <motion.div 
-      className="feature-card"
-      whileHover={{ y: -5 }}
+      className="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
+      whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
       transition={{ duration: 0.2 }}
     >
       <div className="flex items-center">
-        <div className={`p-3 rounded-lg ${color}`}>
+        <div className={`p-2 rounded-lg ${color}`}>
           {icon}
         </div>
         <div className="ml-4">
-          <p className="text-sm font-medium text-gray-500">{title}</p>
-          <p className="text-2xl font-semibold text-gray-900">{value}</p>
-          {change && (
-            <p className="text-sm text-green-500 mt-1 flex items-center">
-              <TrendingUp className="h-4 w-4 mr-1" />
-              {change}
-            </p>
-          )}
+          <p className="text-sm font-medium text-gray-600">{title}</p>
+          <p className="text-2xl font-bold text-gray-900 mt-1">{value}</p>
+          <p className="text-sm text-green-600 mt-1">↑ {change}</p>
         </div>
       </div>
     </motion.div>
   );
 };
 
-const DashboardStats = () => {
+const DashboardStats: React.FC = () => {
   const stats = [
     {
       title: "总活动数",
       value: "24",
-      icon: <Target className="h-6 w-6 text-white" />,
-      change: "+12%",
-      color: "bg-gradient-to-r from-primary-500 to-primary-600"
+      change: "12%",
+      icon: <BarChart3 className="h-6 w-6 text-white" />,
+      color: "bg-primary-500"
     },
     {
       title: "活跃活动",
       value: "8",
-      icon: <Eye className="h-6 w-6 text-white" />,
-      change: "+5%",
-      color: "bg-gradient-to-r from-secondary-500 to-secondary-600"
+      change: "5%",
+      icon: <TrendingUp className="h-6 w-6 text-white" />,
+      color: "bg-green-500"
     },
     {
-      title: "转化率",
+      title: "平均转化率",
       value: "3.2%",
-      icon: <TrendingUp className="h-6 w-6 text-white" />,
-      change: "+1.2%",
-      color: "bg-gradient-to-r from-accent-500 to-accent-600"
+      change: "1.2%",
+      icon: <Target className="h-6 w-6 text-white" />,
+      color: "bg-purple-500"
     },
     {
       title: "平均ROI",
       value: "245%",
+      change: "18%",
       icon: <DollarSign className="h-6 w-6 text-white" />,
-      change: "+8%",
-      color: "bg-gradient-to-r from-green-500 to-emerald-600"
+      color: "bg-yellow-500"
     }
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {stats.map((stat, index) => (
         <StatCard
           key={index}
           title={stat.title}
           value={stat.value}
-          icon={stat.icon}
           change={stat.change}
+          icon={stat.icon}
           color={stat.color}
         />
       ))}
